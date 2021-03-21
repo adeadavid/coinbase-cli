@@ -12,6 +12,10 @@
   "keywords": [],
   "author": "Adegorite Afolabi David",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adeadavid/cryptostats-cli"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "colors": "^1.4.0",
