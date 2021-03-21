@@ -27,12 +27,16 @@ program
     console.info(
       `Developed by: ${pkg.author} \nVersion: ${pkg.version}\n`.cyan
     );
+
     try {
-      const response = await api.getData(options.base, options.quote);
+      const response = await api.getData(
+        options.base.toUpperCase(),
+        options.quote.toUpperCase()
+      );
       console.info("Loading...".yellow);
       // console.info(response);
       response.map(async (coin) => {
-        convertImage(coin, options.quote);
+        convertImage(coin, options.quote.toUpperCase());
       });
     } catch (error) {
       console.info("Error: ".yellow, error.message.red);
