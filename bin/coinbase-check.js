@@ -1,10 +1,7 @@
 #!/usr/bin/env node
 const program = require("commander");
 const colors = require("colors");
-const fs = require("fs");
-const terminalImage = require("terminal-image");
-const path = require("path");
-const svg2img = require("svg2img");
+const pkg = require("../package.json");
 
 const Configstore = require("configstore");
 const Api = require("../lib/Api");
@@ -28,7 +25,9 @@ program
   )
   .description("Check the status of cyptocurreny price, DEFAULT:BTC")
   .action(async (options) => {
-    console.info("Developed by: Adegorite Afolabi David".cyan);
+    console.info(
+      `Developed by: ${pkg.author} \nVersion: ${pkg.version}\n`.cyan
+    );
     try {
       const response = await api.getData(options.base, options.quote);
       console.info("Loading...".yellow);
