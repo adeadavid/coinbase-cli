@@ -5,7 +5,7 @@ const pkg = require("../package.json");
 
 const Configstore = require("configstore");
 const Api = require("../lib/Api");
-const convertImage = require("../utils/convertImage");
+const responseView = require("../utils/responseView");
 
 const store = new Configstore();
 const api = new Api(store.get("API-KEY"));
@@ -27,16 +27,14 @@ program
     console.info(
       `Developed by: ${pkg.author} \nVersion: ${pkg.version}\n`.cyan
     );
-
+    const base = options.base.toUpperCase();
+    const quote = options.quote.toUpperCase();
     try {
-      const response = await api.getData(
-        options.base.toUpperCase(),
-        options.quote.toUpperCase()
-      );
+      const response = await api.getData(base, quote);
       console.info("Loading...".yellow);
       // console.info(response);
       response.map(async (coin) => {
-        convertImage(coin, options.quote.toUpperCase());
+        responseView(coin, quote);
       });
     } catch (error) {
       console.info("Error: ".yellow, error.message.red);

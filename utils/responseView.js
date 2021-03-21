@@ -1,8 +1,8 @@
 const formatCurrency = require("./formatCurrency");
 
-function responseView(coin, logo, quote) {
+function responseView(coin, quote) {
   console.info(
-    `---------------------------------------------------\n${logo}\n${
+    `---------------------------------------------------\n${
       coin.name.yellow
     }: ${coin.symbol.cyan} (${coin.rank.green})\n${"Price".yellow}: ${
       formatCurrency(coin.price, quote).green
