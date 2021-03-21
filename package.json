@@ -29,7 +29,6 @@
     "colors": "^1.4.0",
     "commander": "^7.1.0",
     "configstore": "^5.0.1",
-    "inquirer": "^8.0.0",
-    "svg2img": "^0.9.1"
+    "inquirer": "^8.0.0"
   }
 }
