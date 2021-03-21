@@ -1,11 +1,9 @@
 {
   "name": "cryptostats",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "command line interface for cyptocurrencies",
   "main": "index.js",
-  "bin": {
-    "cryptostats": "./bin/cryptostats.js"
-  },
+  "bin": "./bin/cryptostats.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,11 +16,15 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "canvas": "^2.7.0",
     "colors": "^1.4.0",
     "commander": "^7.1.0",
     "configstore": "^5.0.1",
     "inquirer": "^8.0.0",
     "svg2img": "^0.9.1",
     "terminal-image": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-pre-gyp": "0.12.0"
   }
 }
