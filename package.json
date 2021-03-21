@@ -7,7 +7,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "keywords": [
     "Crypto",
     "Bitcoin",
@@ -15,7 +14,7 @@
     "Blockchain",
     "cli"
   ],
-"author": "Adegorite Afolabi David",
+  "author": "Adegorite Afolabi David",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -25,17 +24,12 @@
   "bugs": {
     "url": "https://github.com/adeadavid/cryptostats-cli/issues"
   },
-"dependencies": {
+  "dependencies": {
     "axios": "^0.21.1",
-    "canvas": "^2.7.0",
     "colors": "^1.4.0",
     "commander": "^7.1.0",
     "configstore": "^5.0.1",
     "inquirer": "^8.0.0",
-    "svg2img": "^0.9.1",
-    "terminal-image": "^1.2.1"
-  },
-  "devDependencies": {
-    "node-pre-gyp": "0.12.0"
+    "svg2img": "^0.9.1"
   }
 }
