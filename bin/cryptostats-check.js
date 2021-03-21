@@ -5,7 +5,6 @@ const pkg = require("../package.json");
 
 const Configstore = require("configstore");
 const Api = require("../lib/Api");
-const formatCurrency = require("../utils/formatCurrency");
 const convertImage = require("../utils/convertImage");
 
 const store = new Configstore();
