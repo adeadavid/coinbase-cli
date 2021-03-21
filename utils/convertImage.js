@@ -27,7 +27,7 @@ async function convertImage(coin, quoteCurrency) {
       coin.logo_url ? coin.logo_url : defaultUrl,
       async (error, buffer) => {
         await fs.writeFile(
-          `./assets/${coin.symbol.toLowerCase()}.jpeg`,
+          path.join(__dirname, `../assets/${coin.symbol.toLowerCase()}.jpeg`),
           buffer,
           async () => {
             const coinLogo = await terminalImage.file(
