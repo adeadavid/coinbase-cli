@@ -20,7 +20,7 @@ Get help
    npx cryptostats --help
 ```
 
-Set API key from [Nomics](https://nomics.com/)
+Set API key; get a key from [Nomics](https://nomics.com/)
 
 ```bash
    npx cryptostats key set
@@ -48,10 +48,10 @@ options
    npx cryptostats check price
 ```
 
-Check DOGE against Naira
+Check DOGE against Dollars
 
 ```bash
-   npx cryptostats check price --base DOGE --NGN
+   npx cryptostats check price --base DOGE --quote USD
 ```
 
 ## App Info
