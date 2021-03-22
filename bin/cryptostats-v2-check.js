@@ -25,7 +25,7 @@ program
   .description("Check the status of cyptocurreny price, DEFAULT:BTC")
   .action(async (options) => {
     console.info(
-      `Developed by: ${pkg.author} \nVersion: ${pkg.version}\n`.cyan
+      `Developed by: Adegorite Afolabi David \nVersion: ${pkg.version}\n`.cyan
     );
     const base = options.base.toUpperCase();
     const quote = options.quote.toUpperCase();
