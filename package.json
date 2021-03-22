@@ -1,6 +1,6 @@
 {
   "name": "cryptostats",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "command line interface for cyptocurrencies",
   "main": "index.js",
   "bin": "./bin/cryptostats.js",
