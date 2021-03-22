@@ -1,9 +1,9 @@
 {
   "name": "cryptostats-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "command line interface for cyptocurrencies",
   "main": "index.js",
-  "bin": "./bin/cryptostats.js",
+  "bin": "./bin/cryptostats-v2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
