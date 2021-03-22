@@ -28,7 +28,7 @@ Get help
     cryptostats-v2 --help
 ```
 
-Set API key from [Nomics](https://nomics.com/)
+Set API key; get a key from [Nomics](https://nomics.com/)
 
 ```bash
     cryptostats-v2 key set
@@ -56,10 +56,10 @@ options
     cryptostats-v2 check price
 ```
 
-Check DOGE against Naira
+Check DOGE against Dollars
 
 ```bash
-    cryptostats-v2 check price --base DOGE --NGN
+    cryptostats-v2 check price --base DOGE --quote USD
 ```
 
 ## App Info
